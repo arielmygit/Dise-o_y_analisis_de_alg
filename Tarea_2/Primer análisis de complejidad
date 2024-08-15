@@ -1,0 +1,16 @@
+package org.example;
+
+public class Main {
+    public static void main(String[] args) {
+        int a[] = {1, 2, 3}; //Asignacion, T(n)=1
+
+        for (int i = 0; i < a.length; i++) {         //Bucle for, T(n)=n
+            for (int j = 0; j < a.length; j++) {     //Bucle for, T(n)=n
+                    System.out.println("(" + a[i] + "," + a[j] + ")");
+            }
+        }
+        System.out.println("Combinaciones realizadas: "+a.length*a.length); //Operación Aritmetica, T(n)=1
+
+        //Complejidad del programa: T(n)=n^2+2
+    }
+}
